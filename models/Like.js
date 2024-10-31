@@ -1,4 +1,8 @@
+const { Sequelize } = require("sequelize");
 
-let Like;
+let Like = Sequelize.define("post", {
+    reactionType: Sequelize.STRING,
+    createdAt: Sequelize.STRING
+})
 
 module.exports = Like;
